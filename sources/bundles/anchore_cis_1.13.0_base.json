@@ -64,11 +64,11 @@
                     "params": [
                         {
                             "name": "ports", 
-                            "value": "12345,23456"
+                            "value": "22"
                         }, 
                         {
                             "name": "type", 
-                            "value": "whitelist"
+                            "value": "blacklist"
                         }
                     ], 
                     "trigger": "exposed_ports"
@@ -276,7 +276,7 @@
                     "trigger": "package"
                 }, 
                 {
-                    "action": "STOP", 
+                    "action": "WARN", 
                     "comment": "section 4.4", 
                     "gate": "vulnerabilities", 
                     "id": "0821c410-b0d4-4a25-90d7-aa71b46d7e32", 
@@ -287,11 +287,11 @@
                         }, 
                         {
                             "name": "severity_comparison", 
-                            "value": ">="
+                            "value": "<="
                         }, 
                         {
                             "name": "severity", 
-                            "value": "low"
+                            "value": "high"
                         }, 
                         {
                             "name": "vendor_only", 
@@ -316,7 +316,7 @@
                         }, 
                         {
                             "name": "severity", 
-                            "value": "unknown"
+                            "value": "critical"
                         }, 
                         {
                             "name": "fix_available", 
